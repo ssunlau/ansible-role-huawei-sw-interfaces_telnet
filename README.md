@@ -1,4 +1,4 @@
-huawei-sw-interface_telnet
+huawei-sw-interfaces_telnet
 ===========================
 
 This ansible role gathering Huawei Switches interfaces information via telnet, the project is aiming to provide the same facts(ansible_net_interfaces) as cisco-ios.
@@ -77,14 +77,7 @@ Directories Hightlights
 Installing
 ----------
 
-Expecting the ansible directory is /etc/ansible
-
-```
-#cd /etc/ansible/roles/
-#mkdir huawei-sw-facts_telnet
-#cd huawei-sw-facts_telnet
-#git clone https://ssunlau/ansible-role-huawei-sw-interfaces_telnet.git
-```
+Refer to ansible glaxy installation guide(https://galaxy.ansible.com/)
 
 Example Playbook
 ----------------
