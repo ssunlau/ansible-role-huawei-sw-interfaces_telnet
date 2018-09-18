@@ -8,13 +8,15 @@ Requirements
 
 Ansible, git, python2
 
+```
 ansible version = 2.6.2
 git version = 1.8.3.1-14
 python2 version = 2.7.5
 python2-pip version = 8.1.2-6
-    re (python build-in)
+    re (python build-in) 
     sys (python build-in)
     json (python build-in)
+```    
 
 Role Variables
 --------------
@@ -24,10 +26,10 @@ A description of the settable variables for this role should go here, including 
 {{ inventory_hostname }} auto defined according to your playbook yml file
 
 Inside default/main.yml, you will find the variable to make this role useful:
-
+```
 {{ usr }} username of telnet credential
 {{ pwd }} password of telnet credential
-
+```
 Change the variable in format "var: value", example as follows:
 
 ```
