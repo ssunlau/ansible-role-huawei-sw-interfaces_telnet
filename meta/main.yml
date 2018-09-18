@@ -1,7 +1,7 @@
 galaxy_info:
+  role_name: ansible-role-huawei-sw-interfaces_telnet
   author: ssunlau 
   description: gather facts - interfaces (Telnet) from Huawei Switches for Ansible 
-
   license: MIT
 
   min_ansible_version: 1.2
