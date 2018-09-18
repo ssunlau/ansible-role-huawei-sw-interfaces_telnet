@@ -7,6 +7,9 @@ galaxy_info:
   min_ansible_version: 1.2
 
   platforms:
+  - name: centos
+    versions:
+    - 7.0
   #- name: Huawei LS-S5352C-EI 
   #  versions:
   #  - all
