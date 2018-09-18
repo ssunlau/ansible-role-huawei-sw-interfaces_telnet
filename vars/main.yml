@@ -1,0 +1,5 @@
+---
+# vars file for huawei-sw-facts_telnet
+usr: username
+pwd: password
+

@@ -1,0 +1,19 @@
+galaxy_info:
+  author: ssunlau 
+  description: gather facts - interfaces (Telnet) from Huawei Switches for Ansible 
+
+  license: license MIT
+
+  min_ansible_version: 1.2
+
+  platforms:
+  - name: Huawei LS-S5352C-EI 
+    versions:
+    - all
+    - 5.150
+
+  galaxy_tags:
+    - networking
+    - huawei
+    - switch
+    - management 

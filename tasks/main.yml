@@ -1,0 +1,35 @@
+---
+# tasks file for huawei-sw-interfaces_telnet 
+
+- name: Gathering Huawei switch(es) information via telnet
+  telnet:
+    user: "{{ usr }}"
+    password: "{{ pwd }}"
+    login_prompt: "Username:"
+    prompts:
+      - "<.*>"
+    command:
+      - screen-length 0 temporary 
+      - display current-configuration
+      - display interface
+      - display version
+  register: config
+
+- name: Saving ansible_net_interfaces
+  copy:
+    content: "{{ config.output[2] }}"
+    dest: "/etc/ansible/roles/huawei-sw-facts_telnet/temp/{{ inventory_hostname }}"
+
+- name: Convert ansible_net_interfaces into JSON
+  command:
+    python /etc/ansible/roles/huawei-sw-facts_telnet/files/interfaces.py {{ inventory_hostname }}
+
+- name: Garbage Collection 
+  file:
+    state: absent
+    path: '/etc/ansible/roles/huawei-sw-facts_telnet/temp/'
+
+- name: Restore temp storage
+  file:
+    state: directory
+    path: '/etc/ansible/roles/huawei-sw-facts_telnet/temp/'

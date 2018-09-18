@@ -1,0 +1,6 @@
+---
+# defaults file for huawei-sw-interfaces_telnet
+
+#credential
+usr: username
+pwd: password
