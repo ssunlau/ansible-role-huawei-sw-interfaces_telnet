@@ -21,8 +21,6 @@ python2-pip version = 8.1.2-6
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variabl$
-
 {{ inventory_hostname }} auto defined according to your playbook yml file
 
 Inside default/main.yml, you will find the variable to make this role useful:
