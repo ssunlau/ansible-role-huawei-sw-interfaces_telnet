@@ -1,9 +1,9 @@
-#huawei-sw-interface_telnet
-=========
+huawei-sw-interface_telnet
+===========================
 
 This ansible role gathering Huawei Switches interfaces information via telnet, the project is aiming to provide the same facts(ansible_net_interfaces) as cisco-ios.
 
-##Requirements
+Requirements
 ------------
 
 Ansible, git, python2
@@ -16,7 +16,7 @@ python2-pip version = 8.1.2-6
     sys (python build-in)
     json (python build-in)
 
-##Role Variables
+Role Variables
 --------------
 
 A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variabl$
@@ -35,7 +35,7 @@ usr: username
 pwd: password
 ```
 
-##Tree
+Tree
 ----
 ```
 ├── defaults
@@ -58,7 +58,7 @@ pwd: password
 └── vars
     └── main.yml
 ```
-##Directories Hightlights
+Directories Hightlights
 -----------------------
 ```
 ├── files
@@ -74,7 +74,7 @@ pwd: password
 /temp: temporary storage for scripts
 
 
-##Installing
+Installing
 ----------
 
 Expecting the ansible directory is /etc/ansible
@@ -86,7 +86,7 @@ Expecting the ansible directory is /etc/ansible
 #git clone https://ssunlau/ansible-role-huawei-sw-interfaces_telnet.git
 ```
 
-##Example Playbook
+Example Playbook
 ----------------
 
 ```
@@ -97,12 +97,12 @@ Expecting the ansible directory is /etc/ansible
    - role: huawei-sw-interface_telnet                    
 ```
 
-##License
+License
 -------
 
 This project is licensed under the **MIT** License
 
-##Author Information
+Author Information
 ------------------
 
 **Chun Lau** (https://github.com/ssunlau)
