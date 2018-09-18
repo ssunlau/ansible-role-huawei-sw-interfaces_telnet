@@ -2,14 +2,11 @@ galaxy_info:
   author: ssunlau 
   description: gather facts - interfaces (Telnet) from Huawei Switches for Ansible 
 
-  license: license MIT
+  license: MIT
 
   min_ansible_version: 1.2
 
   platforms:
-  - name: Ubuntu
-    versions:
-    - trusty
   - name: CentOS
     versions:
     - 7
