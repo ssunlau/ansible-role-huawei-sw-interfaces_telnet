@@ -7,10 +7,10 @@ galaxy_info:
   min_ansible_version: 1.2
 
   platforms:
-  - name: Huawei LS-S5352C-EI 
-    versions:
-    - all
-    - 5.150
+  #- name: Huawei LS-S5352C-EI 
+  #  versions:
+  #  - all
+  #  - 5.150
 
   galaxy_tags:
     - networking
